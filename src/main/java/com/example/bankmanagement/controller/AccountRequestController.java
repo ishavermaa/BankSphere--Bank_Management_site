@@ -26,7 +26,7 @@ public class AccountRequestController {
     private UserService userService;
 
     @PostMapping
-    @PreAuthorize("hasRole('CUSTOMER')")
+    // @PreAuthorize("hasRole('CUSTOMER')")
     public ResponseEntity<AccountRequest> createAccountRequest(@RequestBody Map<String, String> request, Authentication authentication) {
         String email = authentication.getName();
         User user = userService.findByEmail(email);
