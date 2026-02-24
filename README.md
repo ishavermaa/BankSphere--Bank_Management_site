@@ -69,6 +69,7 @@ src/
 ├── main/
 │   ├── java/
 │   │   └── com/example/bankmanagement/
+|   |       ├── config/
 │   │       ├── controller/
 │   │       ├── model/
 │   │       ├── repository/
